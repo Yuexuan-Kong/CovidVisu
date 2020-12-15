@@ -34,4 +34,15 @@ Nous avions plusieurs solutions pour cela : pouvoir modifier à volonté le jeu 
 
 Liste des traitements les plus comparés
 ---
-**A ANALYSER**
+En trouvant les 10 maximums valeurs dans la matrice patients_nb où chaque caisse correspond au nombre de comparaisons faits entre deux traitements (un traitement correspondant à la ligne et un autre correspondant au colonne), on a réussi à récuperer ces 9 traitements les plus comparés. Par contre, il y a deux couples de traitemnts qui ont été comparés le même nombre de fois. Avec le code actuel, il ne récupère que le premier index dans la valeur retournée par la fonction argwhere (c'est-à-dire un seul couple de traitements). Il faudra qu'on modifie le code pour qu'il puisse donner une liste d'un nombre quelconque des traitements les plus comparés.
+
+Voici la liste des 9 traitements les plus comparés :
+[['hydroxychloroquine', 'antimalaria'],
+ ['lopinavir+ritonavir', 'antiviral+antiretrovirals'],
+ ['chloroquine', 'antimalaria'],
+ ['placebo', 'control'],
+ ['standard of care', 'control'],
+ ['favipiravir', 'antiviral+broad spectrum'],
+ ['tocilizumab', 'monoclonal antibodies'],
+ ['umifenovir', 'antiviral+broad spectrum'],
+ ['mesenchymal stem cells', 'atmp']]
